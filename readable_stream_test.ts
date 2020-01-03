@@ -1,4 +1,4 @@
-import {assertEqual, test} from "https://deno.land/x/testing@v0.2.6/mod.ts";
+import {assertEqual, test} from "https://deno.land/std@v0.28.1/testing/mod.ts";
 import {ReadableStream} from "./readable_stream.ts";
 import {ReadableStreamBYOBReader} from "./readable_stream_byob_reader.ts";
 import {ReadableStreamDefaultReader} from "./readable_stream_reader.ts";

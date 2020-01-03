@@ -1,5 +1,5 @@
 import { assertEqual } from "https://deno.land/x/pretty_assert/mod.ts";
-import { test } from "https://deno.land/x/testing@v0.2.6/mod.ts";
+import { test } from "https://deno.land/std@v0.28.1/testing/mod.ts";
 import { WritableStream } from "./writable_stream.ts";
 import "./writable_stream_controller.ts"
 import "./writable_stream_writer.ts"

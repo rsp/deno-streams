@@ -1,4 +1,4 @@
-import { assertEqual } from "https://deno.land/x/pretty_assert/mod.ts";
+import { assertEquals } from "https://deno.land/x/pretty_assert/mod.ts";
 import { test } from "https://deno.land/std@v0.28.1/testing/mod.ts";
 import { WritableStream } from "./writable_stream.ts";
 import "./writable_stream_controller.ts"
@@ -24,9 +24,9 @@ test(async function testWritableStream() {
     }
   });
   await readable.pipeTo(writable);
-  assertEqual(chunks, src);
-  assertEqual(readable.state, "closed");
-  assertEqual(writable.state, "closed");
+  assertEquals(chunks, src);
+  assertEquals(readable.state, "closed");
+  assertEquals(writable.state, "closed");
 });
 
 test(async function testWritableStreamError() {
@@ -42,6 +42,6 @@ test(async function testWritableStreamError() {
     }
   });
   await readable.pipeTo(writable);
-  assertEqual(readable.state, "errored");
-  assertEqual(writable.state, "errored");
+  assertEquals(readable.state, "errored");
+  assertEquals(writable.state, "errored");
 });

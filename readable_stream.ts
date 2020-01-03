@@ -156,7 +156,7 @@ export class ReadableStream<T = any> {
       preventClose?: boolean;
       preventAbort?: boolean;
       preventCancel?: boolean;
-      signal?: domTypes.AbortSignal;
+      signal?: __domTypes.AbortSignal;
     } = {}
   ) {
     if (!IsReadableStream(this)) {

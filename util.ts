@@ -17,6 +17,6 @@ export function isArrayBufferView(a): a is ArrayBufferView {
   );
 }
 
-export function isAbortSignal(x): x is domTypes.AbortSignal {
+export function isAbortSignal(x): x is __domTypes.AbortSignal {
   return typeof x === "object" && x.hasOwnProperty("aborted");
 }
